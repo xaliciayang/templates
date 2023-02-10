@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {},
+  "resources": [
+    {
+      "type": "Microsoft.Features/featureProviders/subscriptionFeatureRegistrations",
+      "apiVersion": "2021-07-01",
+      "name": "Microsoft.Sql/AzureSQLDatabaseBlockGeoRedundantBackupStorage",
+      "properties": { 
+        "featureName": "AzureSQLDatabaseBlockGeoRedundantBackupStorage",
+        "providerNamespace": "Microsoft.Sql",
+        "state": "Registered"
+      }
+    }
+  ]
+}
